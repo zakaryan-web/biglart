@@ -1,0 +1,53 @@
+.p-chip {
+    position: relative;
+    display: flex;
+    padding: 5px 10px;
+    gap: 10px;
+    border-radius: 15px;
+
+    .p-chip-label {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    &.f-16 {
+        .p-chip-label {
+            font-size: 16px;
+        }
+    }
+
+    &.black {
+        background: rgba(43, 42, 41, 1);
+        color: rgba(255, 255, 255, 1);
+    }
+
+    &.white {
+        background: rgba(255, 255, 255, 1);
+        color: rgba(43, 42, 41, 1);
+    }
+
+    &.open {
+        background: rgba(88, 119, 113, 1);
+        color: rgba(255, 255, 255, 1);
+    }
+
+    &.close {
+        background: rgba(228, 224, 212, 1);
+        color: rgba(43, 42, 41, 1);
+    }
+
+    &.moderation {
+        background: rgba(228, 224, 212, 1);
+        color: rgba(43, 42, 41, 1);
+    }
+
+    &.success {
+        background: rgba(88, 119, 113, 1);
+        color: rgba(255, 255, 255, 1);
+    }
+
+    &.error {
+        background: rgba(255, 54, 60, 1);
+        color: rgba(255, 255, 255, 1);
+    }
+}

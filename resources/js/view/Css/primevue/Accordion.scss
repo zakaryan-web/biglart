@@ -1,0 +1,48 @@
+.p-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .p-accordionpanel {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 15px;
+        background: rgba(251, 251, 251, 1);
+        border: 1px solid rgba(240, 240, 240, 1);
+        padding: 27px 30px;
+
+        &.p-accordionpanel-active {
+            background: rgba(244, 244, 244, 1);
+        }
+
+        .p-accordionheader {
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+            background: none;
+            font-weight: 500;
+            font-size: 25px;
+            color: rgba(43, 42, 41, 1);
+
+            i {
+                font-weight: 500;
+                font-size: 25px;
+                color: rgba(43, 42, 41, 1);
+            }
+        }
+
+        .p-accordioncontent {
+            .p-accordioncontent-content {
+                padding: 0;
+                margin: 0;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 30px;
+                color: rgba(43, 42, 41, 1);
+                background: none;
+            }
+        }
+    }
+}

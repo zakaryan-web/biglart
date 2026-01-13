@@ -1,0 +1,22 @@
+.p-checkbox {
+    width: 25px;
+    height: 25px;
+
+    &.error > .p-checkbox-box, &.p-invalid > .p-checkbox-box {
+        color: rgba(255, 54, 60, 1);
+        border: 1px solid rgba(255, 54, 60, 1);
+    }
+
+    .p-checkbox-box {
+        width: 25px;
+        height: 25px;
+        border-radius: 10px;
+        border: none;
+        background: rgba(231, 231, 231, 1);
+
+
+        svg {
+            color: rgba(43, 42, 41, 1);
+        }
+    }
+}

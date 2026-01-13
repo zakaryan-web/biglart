@@ -1,0 +1,150 @@
+@use "./primevue/Accordion";
+@use "./primevue/Menubar";
+@use "./primevue/Menu";
+@use "./primevue/Button";
+@use "./primevue/Select";
+@use "./primevue/InputText";
+@use "./primevue/Password";
+@use "./primevue/Checkbox";
+@use "./primevue/ToggleSwitch";
+@use "./primevue/Message";
+@use "./primevue/FormField";
+@use "./primevue/Textarea";
+@use "./primevue/Chip";
+@use "./primevue/Rating";
+@use "./primevue/Tabs";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+* {
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+    line-height: 100%;
+    letter-spacing: 0;
+}
+
+h1, h2, h3, h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    color: rgba(43, 42, 41, 1);
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+h4 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(43, 42, 41, 1);
+}
+
+.shortLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 15px;
+    padding: 4px;
+    background: rgba(43, 42, 41, 1);
+    text-decoration: none;
+
+    & > .p-button-icon {
+        color: rgba(255, 255, 255, 1);
+        font-size: 11px;
+    }
+
+
+    &.white {
+        background: rgba(255, 255, 255, 1);
+
+        & > .p-button-icon {
+            color: rgba(43, 42, 41, 1);
+        }
+    }
+}
+
+.infoBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 15px;
+    padding: 20px;
+    color: rgba(43, 42, 41, 1);
+    background: rgba(248, 248, 248, 1);
+
+    .title {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .data {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 35px;
+            height: 35px;
+            padding: 3px 7px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.3);
+
+            i {
+                font-size: 20px;
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+
+        span {
+            font-weight: 600;
+            font-size: 30px;
+        }
+    }
+
+    &.black {
+        color: rgba(255, 255, 255, 1);
+        background: rgba(43, 42, 41, 1);
+    }
+}

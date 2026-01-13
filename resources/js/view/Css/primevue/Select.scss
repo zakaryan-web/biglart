@@ -1,0 +1,24 @@
+.p-select {
+    display: flex;
+    align-items: center;
+    height: 53px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(213, 213, 213, 1);
+    border-radius: 15px;
+    padding: 10px 0 10px 20px;
+    font-weight: 400;
+    font-size: 20px;
+    box-shadow: none;
+
+    .p-select-label, .p-select-dropdown {
+        color: rgba(0, 0, 0, 1);
+    }
+
+    &.error, &.p-invalid {
+        border: 1px solid rgba(255, 54, 60, 1);
+
+        .p-select-label, .p-select-dropdown {
+            color: rgba(255, 54, 60, 1);
+        }
+    }
+}

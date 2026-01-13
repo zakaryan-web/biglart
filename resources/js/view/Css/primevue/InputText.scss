@@ -1,0 +1,41 @@
+.p-inputtext {
+    display: flex;
+    align-items: center;
+    height: 53px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(213, 213, 213, 1);
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(43, 42, 41, 1);
+    box-shadow: none;
+
+    &.error, &.p-invalid {
+        color: rgba(255, 54, 60, 1);
+        border: 1px solid rgba(255, 54, 60, 1);
+    }
+
+    &.auth {
+        background: rgba(248, 248, 248, 1);
+        border: 1px solid rgba(240, 240, 240, 1);
+    }
+
+    &.noborder {
+        border: 1px solid rgba(255, 255, 255, 1);
+    }
+
+    &.grey {
+        background: rgba(248, 248, 248, 1);
+        border: 1px solid rgba(248, 248, 248, 1);
+    }
+}
+
+.p-iconfield {
+    display: flex;
+    gap: 10px;
+
+    .p-inputtext {
+        padding-left: 45px;
+    }
+}

@@ -1,0 +1,94 @@
+.p-menubar {
+    padding: 0;
+    border: 0;
+    background: none;
+
+    .p-menubar-root-list {
+        align-items: center;
+        height: 55px;
+        padding: 0;
+        border: 0;
+        background: none;
+        gap: 30px;
+
+        .p-menubar-item {
+            &.p-focus > .p-menubar-item-content, &.p-menubar-item-active > .p-menubar-item-content {
+                background: none;
+            }
+
+            .p-menubar-item-content {
+
+                &:hover {
+                    background: none;
+                }
+
+                .p-menubar-item-link {
+                    gap: 10px;
+                    border: 0;
+
+                    .p-menubar-item-label {
+                        font-weight: 400;
+                        font-size: 20px;
+                        color: rgba(43, 42, 41, 1);
+                    }
+
+                    .p-menubar-submenu-icon {
+                        width: 18px;
+                        height: 18px;
+                        color: rgba(43, 42, 41, 1);
+                    }
+                }
+            }
+
+            .p-menubar-submenu {
+                flex-direction: column;
+                gap: 10px;
+                background: rgba(255, 255, 255, 1);
+                box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.25);
+                border-radius: 15px;
+                padding: 20px;
+
+                .p-menubar-item {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    border-radius: 10px;
+                    padding: 10px 20px;
+                    background: rgba(248, 248, 248, 1);
+
+                    .p-menubar-item-content {
+                        padding: 0;
+                        margin: 0;
+
+                        .p-menubar-item-link {
+                            padding: 0;
+                            margin: 0;
+
+                            .p-menubar-item-label {
+                                font-weight: 400;
+                                font-size: 20px;
+                                color: rgba(0, 0, 0, 1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.headerHome {
+        .p-menubar-root-list {
+            .p-menubar-item {
+                .p-menubar-item-content {
+                    .p-menubar-item-label {
+                        color: rgba(255, 255, 255, 1);
+                    }
+
+                    .p-menubar-submenu-icon {
+                        color: rgba(255, 255, 255, 1);
+                    }
+                }
+            }
+        }
+    }
+}

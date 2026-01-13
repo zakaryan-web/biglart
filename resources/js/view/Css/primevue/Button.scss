@@ -1,0 +1,152 @@
+.p-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 15px;
+    padding: 15px;
+    height: 53px;
+    border: none;
+    text-decoration: none;
+    background: none;
+    color: rgba(255, 255, 255, 1);
+    width: fit-content;
+    min-width: fit-content;
+    white-space: nowrap;
+
+    .p-button-label {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    .p-button-icon {
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    &.f-16 {
+        .p-button-label {
+            font-weight: 400;
+            font-size: 16px;
+        }
+
+        .p-button-icon {
+            font-weight: 400;
+            font-size: 16px;
+        }
+    }
+
+    &.pearl {
+        background: rgba(198, 214, 209, 1);
+        color: rgba(43, 42, 41, 1);
+
+        &:hover {
+            background: rgba(188, 216, 211, 1);
+        }
+    }
+
+    &.white {
+        background: rgba(255, 255, 255, 1);
+
+        &:hover {
+            background: rgba(248, 248, 248, 1);
+        }
+    }
+
+    &.black {
+        background: rgba(43, 42, 41, 1);
+
+        &:hover {
+            background: rgba(71, 69, 68, 1);
+        }
+    }
+
+    &.orange {
+        background: rgba(232, 78, 39, 1);
+
+        &:hover {
+            background: rgba(200, 68, 34, 1);
+        }
+    }
+
+    &.darkgreen {
+        background: rgba(88, 119, 113, 1);
+
+        &:hover {
+            background: rgba(113, 158, 149, 1);
+        }
+    }
+
+    &.lightgreen {
+        background: rgba(227, 235, 232, 1);
+        color: rgba(43, 42, 41, 1);
+
+        &:hover {
+            background: rgba(198, 214, 209, 1);
+        }
+    }
+
+    &.grey {
+        background: rgba(228, 224, 212, 1);
+        color: rgba(43, 42, 41, 1);
+
+        &:hover {
+            background: rgba(210, 205, 190, 1);
+        }
+    }
+
+    &.lightgrey {
+        background: rgba(248, 248, 248, 1);
+        color: rgba(43, 42, 41, 1);
+
+        &.translucent {
+            background: rgba(248, 248, 248, 0.2);
+        }
+
+        &:hover {
+            background: rgba(243, 243, 243, 1);
+        }
+    }
+
+    &.lighthearted {
+        background: rgba(248, 248, 248, 0.2);
+
+        &:hover {
+            background: rgba(243, 243, 243, 0.2);
+        }
+    }
+
+    &.gradient {
+        background: linear-gradient(91.66deg, #3482EF 0%, #9156FF 50%, #FCA31D 100%);
+
+        &:hover {
+            background: linear-gradient(91.66deg, #2B6FCE 0%, #693CBD 50%, #D78100 100%);
+        }
+    }
+
+    &.nostyle {
+        height: auto;
+        padding: 0;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    &.textStyle {
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-decoration-thickness: 0;
+        text-decoration-skip-ink: auto;
+        padding: 0;
+    }
+
+    &.whiteText {
+        color: rgba(255, 255, 255, 1);
+    }
+
+    &.blackText {
+        color: rgba(43, 42, 41, 1);
+    }
+}

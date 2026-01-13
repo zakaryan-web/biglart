@@ -1,0 +1,21 @@
+.p-toggleswitch {
+
+    .p-toggleswitch-slider {
+        padding: 5px;
+        border-radius: 15px;
+        background: rgba(102, 176, 17, 0.1);
+
+        .p-toggleswitch-handle {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &.p-toggleswitch-checked {
+        .p-toggleswitch-slider {
+            .p-toggleswitch-handle {
+                background: rgba(102, 176, 17, 1);
+            }
+        }
+    }
+}

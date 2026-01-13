@@ -1,0 +1,56 @@
+.p-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .p-tablist {
+
+        .p-tablist-tab-list {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            border-radius: 15px;
+            padding: 5px;
+            background: rgba(248, 248, 248, 1);
+
+            .p-tab {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-grow: 1;
+                gap: 10px;
+                padding: 10px 20px;
+                border-radius: 10px;
+                border: none;
+                background: rgba(255, 255, 255, 1);
+                font-weight: 500;
+                font-size: 20px;
+                color: rgba(43, 42, 41, 1);
+
+                i {
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: rgba(43, 42, 41, 1);
+                    font-variation-settings: 'FILL' 1;
+                }
+
+                &.p-tab-active {
+                    background: rgba(43, 42, 41, 1);
+                    color: rgba(255, 255, 255, 1);
+
+                    i {
+                        color: rgba(255, 255, 255, 1);
+                    }
+                }
+            }
+
+            .p-tablist-active-bar {
+                display: none;
+            }
+        }
+    }
+
+    .p-tabpanels {
+        padding: 0;
+    }
+}
